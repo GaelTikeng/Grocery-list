@@ -75,7 +75,8 @@ function addHaveIterm() {
     
     // check iterms function 
     checkBtn.addEventListener('click', function () {
-      document.querySelector('need_ul')[0] = li.style.color = "green"
+      let itermContainer = document.querySelector('need_ul')
+      itermContainer[0] = li.style.textDecoration = "line-through"
     })
   }
 
