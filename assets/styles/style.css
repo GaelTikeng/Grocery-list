@@ -90,6 +90,8 @@ li {
 
 .ptag {
   flex: 1;
+  cursor: pointer;
+  transform: translateX(3px);
 }
 
 .fa-solid {
