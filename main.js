@@ -1,29 +1,29 @@
 // event handeler for the need button
 let cartList = {
   item: null,
-  domEl: {},
+  domEl: {}
 }
 
-function addNeedIterm() {
-  const needIterm = document.querySelector(".iterms").value;
+function addNeedIterm () {
+  const needIterm = document.querySelector(".iterms").value
   if (cartList.item) {
-    cartList.domEl.innerHTML = needIterm;
+    cartList.domEl.innerHTML = needIterm
     cartList = {
       item: null,
-      domEl: {},
-    };
-    document.querySelector(".iterms").value = ''
+      domEl: {}
+    }
+    document.querySelector('.iterms').value = ''
     return
   }
 
-  if (needIterm !== "") {
+  if (needIterm !== '') {
     // creating an li tag and giving a class name
-    let li = document.createElement('li')
-    li.className = 'list-of-needs';
+    const li = document.createElement('li')
+    li.className = 'list-of-needs'
     document.querySelector('.need-ul').appendChild(li)
 
     // creating a p tag that will contain the text
-    const need = document.createElement('p');
+    const need = document.createElement('p')
 
     need.innerHTML = needIterm
 
@@ -66,15 +66,15 @@ function addNeedIterm() {
 }
 
 // Event handeler for the have button
-function addHaveIterm() {
+function addHaveIterm () {
   let haveIterm = document.querySelector('.iterms').value
 
   // we test if there is a text in the cartList object if yes the next line send it to the input field and clear the input field after
   if (cartList.item) {
-    cartList.domEl.innerHTML = have-iterm;
+    cartList.domEl.innerHTML = haveIterm
     cartList = {
       item: null,
-      domEl: {},
+      domEl: {}
     }
     document.querySelector('.iterms').value = ''
     return
