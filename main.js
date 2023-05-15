@@ -55,6 +55,12 @@ function addNeedIterm() {
       li.remove();
     });
 
+    // checked function. changes the color text to green
+    checkBtn.addEventListener('click', function () {
+      let itermContainer = document.querySelector('need_ul')
+      itermContainer[0] = li.style.color = "green"
+    })
+
     document.querySelector(".iterms").value = ''
   }
 }
@@ -117,15 +123,23 @@ function addHaveIterm() {
       li.remove();
     });
 
-    // check iterms function
-    // checkBtn.addEventListener('click', function () {
-    //   let itermContainer = document.querySelector('need_ul')
-    //   itermContainer[0] = li.style.textDecoration = "line-through"
-    // })
+    checkBtn.addEventListener('click', function () {
+      let itermContainer = document.querySelector('need_ul')
+      itermContainer[0] = li.style.color = "green"
+    })
 
     // edit function
     // creating an empty object
     document.querySelector(".iterms").value = ''
-    
+    // saveData ()
   }
 }
+
+// function saveData () {
+//   let text = document.querySelector('.need_ul')
+//   localStorage.setItem('data', text.innerHTML)
+// }
+// function showItem () {
+//   document.querySelector('.need_ul').innerHTML = localstorage.getItem('data')
+// }
+// showItem ()
