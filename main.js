@@ -5,7 +5,7 @@ let cartList = {
 }
 
 function addNeedIterm () {
-  const needIterm = document.querySelector(".iterms").value
+  const needIterm = document.querySelector('.iterms').value
   if (cartList.item) {
     cartList.domEl.innerHTML = needIterm
     cartList = {
