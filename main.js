@@ -2,7 +2,7 @@
 let cartList = {
   item: null,
   domEl: {},
-};
+}
 
 function addNeedIterm() {
   const needIterm = document.querySelector(".iterms").value;
@@ -13,19 +13,19 @@ function addNeedIterm() {
       domEl: {},
     };
     document.querySelector(".iterms").value = ''
-    return;
+    return
   }
 
   if (needIterm !== "") {
     // creating an li tag and giving a class name
-    let li = document.createElement('li');
+    let li = document.createElement('li')
     li.className = 'list-of-needs';
     document.querySelector('.need-ul').appendChild(li)
 
     // creating a p tag that will contain the text
     const need = document.createElement('p');
 
-    need.innerHTML = needIterm;
+    need.innerHTML = needIterm
 
     need.addEventListener('click', () => {
       document.querySelector('.iterms').value = need.innerHTML
@@ -52,7 +52,7 @@ function addNeedIterm() {
 
     // function to delete iterm
     deleteBtn.addEventListener('click', function () {
-      li.remove();
+      li.remove()
     });
 
     // checked function. changes the color text to green
@@ -67,17 +67,17 @@ function addNeedIterm() {
 
 // Event handeler for the have button
 function addHaveIterm() {
-  let haveIterm = document.querySelector('.iterms').value;
+  let haveIterm = document.querySelector('.iterms').value
 
   // we test if there is a text in the cartList object if yes the next line send it to the input field and clear the input field after
-  if(cartList.item) {
+  if (cartList.item) {
     cartList.domEl.innerHTML = have-iterm;
     cartList = {
       item: null,
       domEl: {},
-    };
+    }
     document.querySelector('.iterms').value = ''
-    return;
+    return
   }
 
   if (haveIterm !== '') {
@@ -94,15 +94,15 @@ function addHaveIterm() {
       document.querySelector('.iterms').value = have.innerHTML
       cartList.item = have.innerHTML
       cartList.domEl = have
-    });
+    })
 
-    have.className = 'ptag';
-    li.appendChild(have);
+    have.className = 'ptag'
+    li.appendChild(have)
 
     // creating a div that will contain the two buttons
     const actionbtn = document.createElement('div')
     actionbtn.className = 'divbtn'
-    li.appendChild(actionbtn);
+    li.appendChild(actionbtn)
 
     // creating a check button
     const checkBtn = document.createElement('button')
@@ -113,30 +113,20 @@ function addHaveIterm() {
     // creating a delete button
     const deleteBtn = document.createElement('button')
     deleteBtn.innerHTML = '<i class="fa-solid fa-trash"></i>'
-    deleteBtn.className = "deletebtn";
-    actionbtn.appendChild(deleteBtn);
+    deleteBtn.className = 'deletebtn'
+    actionbtn.appendChild(deleteBtn)
 
     haveIterm = ''
 
     // delete iterm function
     deleteBtn.addEventListener('click', function () {
-      li.remove();
-    });
+      li.remove()
+    })
 
     checkBtn.addEventListener('click', function () {
       const itermContainer = document.querySelector('need-ul')
       itermContainer[0] = li.style.color = 'green'
     })
-    document.querySelector(".iterms").value = ''
-    // saveData ()
+    document.querySelector('.iterms').value = ''
   }
 }
-
-// function saveData () {
-//   let text = document.querySelector('.need_ul')
-//   localStorage.setItem('data', text.innerHTML)
-// }
-// function showItem () {
-//   document.querySelector('.need_ul').innerHTML = localstorage.getItem('data')
-// }
-// showItem ()
