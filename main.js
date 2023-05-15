@@ -3,6 +3,8 @@ let cartList = {
   item: null,
   domEl: {}
 }
+const haveButton = document.querySelector('.have')
+const needButton = document.querySelector('.need')
 
 function addNeedIterm () {
   const needIterm = document.querySelector('.iterms').value
@@ -53,7 +55,7 @@ function addNeedIterm () {
     // function to delete iterm
     deleteBtn.addEventListener('click', function () {
       li.remove()
-    });
+    })
 
     // checked function. changes the color text to green
     checkBtn.addEventListener('click', function () {
@@ -64,6 +66,7 @@ function addNeedIterm () {
     document.querySelector('.iterms').value = ''
   }
 }
+needButton.addEventListener('click', addNeedIterm)
 
 // Event handeler for the have button
 function addHaveIterm () {
@@ -130,3 +133,4 @@ function addHaveIterm () {
     document.querySelector('.iterms').value = ''
   }
 }
+haveButton.addEventListener('click', addHaveIterm)
