@@ -16,7 +16,7 @@ function addNeedIterm () {
     }
     document.querySelector('.iterms').value = ''
     return
-  }
+  } 
 
   if (needIterm !== '') {
     // creating an li tag and giving a class name
@@ -60,9 +60,8 @@ function addNeedIterm () {
     // checked function. changes the color text to green
     checkBtn.addEventListener('click', function () {
       const itermContainer = document.querySelector('need-ul')
-      itermContainer[0] = li.style.color = 'green'
+      itermContainer[0] = li.style.textDecoration = 'line-through'
     })
-
     document.querySelector('.iterms').value = ''
   }
 }
