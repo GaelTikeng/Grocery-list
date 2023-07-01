@@ -16,7 +16,7 @@ function addNeedIterm () {
     }
     document.querySelector('.iterms').value = ''
     return
-  } 
+  }
 
   if (needIterm !== '') {
     // creating an li tag and giving a class name
