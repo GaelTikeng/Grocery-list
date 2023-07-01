@@ -97,7 +97,6 @@ function addHaveIterm () {
       cartList.item = have.innerHTML
       cartList.domEl = have
     })
-
     have.className = 'ptag'
     li.appendChild(have)
 
