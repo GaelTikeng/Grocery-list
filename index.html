@@ -12,31 +12,23 @@
   <title>Grocery List</title>
 </head>
 <body>
-  <h1>Shopping list</h1>
+  <h1>Grocery list</h1>
   <div class="all">
     <div class="maincontainer">
       <div class="form">
-        <lebel for="iterms" class="label">Add Iterms </lebel>
-        <input class="iterms" type="text" name="iterm">
-        <input type="submit" value="Need" class="need" onclick="addNeedIterm()">
-        <input type="submit" value="Have" class="have" onclick="addHaveIterm()">
+        <lebel for="iterms" class="label">Add Items </lebel>
+        <input class="iterms" type="text" placeholder="Enter iterm" name="iterm">
+        <input type="submit" value="Need" class="need">
+        <input type="submit" value="Have" class="have">
       </div>
         
-      <h2>Need :</h2>
-      <div class="need_list">
-        <ul class="need_ul">
-          <!-- <li>milk</li>
-          <li>eggs</li> -->
-  
-        </ul>
+      <h2>Needs :</h2>
+      <div class="need-list">
+        <ul class="need-ul"></ul>
       </div>
       <h2>Have :</h2>
-      <div class="have_list">
-        <ul class="have_ul">
-          <!-- <li> Potatoes</li>
-          <li>tomatoes</li> -->
-  
-        </ul>
+      <div class="have-list">
+        <ul class="have-ul"></ul>
       </div>
     </div>
     <img src="./assets/images/shopping-list.jpg" alt="shopping list" class="image">
