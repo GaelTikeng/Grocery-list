@@ -126,7 +126,7 @@ function addHaveIterm () {
 
     checkBtn.addEventListener('click', function () {
       const itermContainer = document.querySelector('need-ul')
-      itermContainer[0] = li.style.color = 'green'
+      itermContainer[0] = li.style.textDecoration = 'line-through'
     })
     document.querySelector('.iterms').value = ''
   }
