@@ -44,7 +44,6 @@ function addNeedIterm () {
       cartList.item = need.innerHTML
       cartList.domEl = need
       need.innerHTML = ''
-
     })
 
     li.appendChild(checkBtn)
