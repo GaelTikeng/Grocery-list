@@ -55,17 +55,16 @@ form {
   width: 60%;
 }
 
-.need,
-.have {
+.need {
   font-size: 20px;
-  padding: 8px;
+  padding: 10px 12px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
 }
 
 h2 {
-  color: #0000ff96;
+  color: #000;
   padding: 10px 0 10px 40px;
 }
 
