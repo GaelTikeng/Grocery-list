@@ -13,3 +13,5 @@ The app has been built with
 * HTML
 * CSS
 * JavaScript
+***
+Check out the app here [https://gaeltikeng.github.io/Grocery-list/](https://gaeltikeng.github.io/Grocery-list/)
